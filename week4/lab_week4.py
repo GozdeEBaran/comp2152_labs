@@ -174,7 +174,7 @@ print("The monster's power is "+power_roll)
 #lab4-Q3
 #Increase the monsters combat strength by its power
 m_combat_strength=min(6,m_combat_strength+monster_power[power_roll])
-print("The monster's combat strength is now "+str(m_combat_strength))
+print("The monster's combat strength is now "+str(m_combat_strength)+"using the"+power_roll +"magic power!"))
 
 
 print("You meet the monster. FIGHT!!")
