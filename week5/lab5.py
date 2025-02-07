@@ -228,17 +228,18 @@ if not input_invalid:
 
         # Lab 5 - Question 1: 
         hero_name = input("Enter your Hero's name (in two words)")
-        
-        if :
+        name= hero_name.split() #will work if name string
+        if len(name) != 2:
             print("    |    Please enter a name with two parts (separated by a space)")
-            
+            tries +=1
         else:
-            if :
+            if not name[0].isalpha or not name[1].isalpha :
                 print("    |    Please enter an alphabetical name")
-                
-            else:
-                
+                tries +=1
+            else: #Gozde Baran = GoB
+                short_name= name[0][0:2:1] + name[1][0:1:0]
                 print("    |    I'm going to call you " + short_name + " for short")
+                input_invalid = False
                 
 
     if not input_invalid:
