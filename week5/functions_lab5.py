@@ -6,19 +6,21 @@ import random
 
 
 # Lab 5: Question 4
-def use_loot():
+
+def use_loot(belt, health_points):
     good_loot_options = ["Health Potion", "Leather Boots"]
     bad_loot_options = ["Poison Potion"]
 
     print("    |    !!You see a monster in the distance! So you quickly use your first item:")
-    
-    if :
-        print("    |    You used " +  +" to up your health to " )
-    elif :
-        
-        print("    |    You used " +  + " to hurt your health to " + )
+    first_item = belt.pop(0)
+    if first_item in good_loot_options:
+        health_points = min(20, (health_points + 2))
+        print("    |    You used " + first_item +" to up your health to " + str(health_points))
+    elif first_item in bad_loot_options:
+        health_points = max(20, (health_points - 2))
+        print("    |    You used " + first_item + " to hurt your health to " + str(health_points))
     else:
-        print("    |    You used " +  + " but it's not helpful")
+        print("    |    You used " + first_item + " but it's not helpful")
     return 
 
 
