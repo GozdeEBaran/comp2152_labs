@@ -21,7 +21,7 @@ def use_loot(belt, health_points):
         print("    |    You used " + first_item + " to hurt your health to " + str(health_points))
     else:
         print("    |    You used " + first_item + " but it's not helpful")
-    return 
+    return  belt,health_points
 
 
 # Lab 5: Question 3 
